@@ -1,60 +1,276 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/custom.min.css">
-
-	<script defer src="js/fontawesome-all.min.js"></script>
-
+	<link rel="shortcut icon" href="img/r.png" />
+	<link rel="apple-touch-icon" href="img/iOS_r.png" />
+	<script defer src="js/fontawesome.min.js"></script>
 	<title>Ricardo Faria</title>
 </head>
 
-<body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body style="background-color: #376eb5">
+	<header class="full" id="top">
+		<div class="row justify-content-center align-items-center h-100">
+			<div class="col-md-3">
+				<img src="img/profile.png" style="width: 100%">
+			</div>
+		</div>
+	</header>
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #376eb5" id="navigation">
 		<div class="container">
-			<a class="navbar-brand" href="#">RICARDO FARIA</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<a class="navbar-brand js-scroll-trigger" href="#top">
+				<h2>
+					<b>Ricardo Faria</b>
+				</h2>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+			 aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
-			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-				<ul class="navbar-nav ml-auto">
+			<div class="collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
+						<a class="nav-link js-scroll-trigger" href="#aboutme">About me</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link js-scroll-trigger" href="#portofolio">Portfolio</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Disabled</a>
+						<a class="nav-link js-scroll-trigger" href="#contacts">Contacts</a>
 					</li>
 				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<a href="img/benfica.jpg" download">
-						<p class="btn btn-outline-success my-2 my-sm-0">DOWNLOAD MY RESUME</p>
+				<div class="form-inline my-2 my-lg-0">
+					<a href="files/cv.pdf" download ">
+						<p class="btn btn-outline-light my-2 my-sm-0 ">Curriculum Vitae</p>
 					</a>
-				</form>
+				</div>
 			</div>
 		</div>
 	</nav>
-
-	<section>
-		<div class="container">
-			<h1>Hello, world!</h1>
+	<section id="aboutme ">
+		<div class="container ">
+			<h1>About me</h1>
+			<div class="container ">
+				<div class="row py-3 ">
+					<div class="col "><h3>Education</h3></div>
+					<div class="col-auto "><button class="btn btn-outline-success " data-toggle="collapse " data-target="#educationgoal
+					 " aria-expanded="true " aria-controls="educationgoal ">Show future goal</button></div>
+				</div>
+				<div class="row ">
+					<div id="educationgoal " class="collapse hide ">
+						<div class="card-body border border-success row align-items-center py-3 ">
+							<div class="col-10 mx-auto col-md-3 text-center py-3 ">
+								<img src="img/ist.svg ">
+							</div>
+							<div class="col col-md-9 ">
+								<h5>Master of Science in Engineering Systems and Computer Engineering</h5>
+								<p>Instituto Superior Técnico</p>
+								<p style="font-size: 12px ">Lisbon, Portugal</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row align-items-center py-3 ">
+					<div class="col-10 mx-auto col-md-3 text-center py-3 ">
+						<img src="img/iscte-iul.svg ">
+					</div>
+					<div class="col col-md-9 ">
+						<h5>Bachelor of Science in Computer Engineering <a style="font-size: 16px; font-weight: normal
+					 ">(2017 - <span style="opacity: .1 ">2020</span>)</a></h5>
+						<p>ISCTE – Instituto Universitário de Lisboa</p>
+						<p style="font-size: 12px ">Lisbon, Portugal</p>
+						<p style="font-size: 12px ">Currently on the 1st year with an average of 17,6 out of 20</p>
+					</div>
+				</div>
+				<div class="row align-items-center py-3 ">
+					<div class="col-10 mx-auto col-md-3 text-center py-3 ">
+						<img src="img/damiao.svg ">
+					</div>
+					<div class="col col-md-9 ">
+						<h5>Course of Science and Technology's <a style="font-size: 16px; font-weight: normal ">(2014 - 2017)</a></h5>
+						<p>Escola Secundária Damião de Goes</p>
+						<p style="font-size: 12px ">Alenquer, Portugal</p>
+						<p style="font-size: 12px ">Concluded with an average of 16,0 out of 20,0</p>
+					</div>
+				</div>
+			</div>
+			<div class="container ">
+				<div class="row py-3 ">
+					<div class="col "><h3>Computer Skills</h3></div>
+				</div>
+				<div class="row align-items-center mx-auto py-3 " id="skills ">
+					<div class="py-2 col-3 col-md-1 text-center ">
+						<img class="zoom " src="img/html.svg ">
+					</div>
+					<div class="col-9 col-md-3 col-lg-2 ">
+						<h5>HTML</h5>
+						<div class="progress ">
+							<div class="progress-bar fill " id="html " role="progressbar " style="background-color: #e44d26; width: 0% "></div>
+						</div>
+					</div>
+					<div class="py-2 col-3 col-md-1 text-center ">
+						<img class="zoom " src="img/css.svg ">
+					</div>
+					<div class="col-9 col-md-3 col-lg-2 ">
+						<h5>CSS</h5>
+						<div class="progress ">
+							<div class="progress-bar fill " id="css " role="progressbar " style="background-color: #1572b6; width: 0% "></div>
+						</div>
+					</div>
+					<div class="py-2 col-3 col-md-1 text-center ">
+						<img class="zoom " src="img/js.svg ">
+					</div>
+					<div class="col-9 col-md-3 col-lg-2 ">
+						<h5>JavaScript</h5>
+						<div class="progress ">
+							<div class="progress-bar fill " id="js " role="progressbar " style="background-color: #efc725; width: 0% "></div>
+						</div>
+					</div>
+					<div class="py-2 col-3 col-md-1 text-center ">
+						<img class="zoom " src="img/php.svg ">
+					</div>
+					<div class="col-9 col-md-3 col-lg-2 ">
+						<h5>PHP</h5>
+						<div class="progress ">
+							<div class="progress-bar fill " id="php " role="progressbar " style="background-color: #7484b6; width: 0% "></div>
+						</div>
+					</div>
+					<div class="py-2 col-3 col-md-1 text-center ">
+						<img class="zoom " src="img/java.svg ">
+					</div>
+					<div class="col-9 col-md-3 col-lg-2 ">
+						<h5>Java</h5>
+						<div class="progress ">
+							<div class="progress-bar fill " id="java " role="progressbar " style="background-color: #5382a1; width: 0% "></div>
+						</div>
+					</div>
+					<div class="py-2 col-3 col-md-1 text-center ">
+						<img class="zoom " src="img/swift.svg ">
+					</div>
+					<div class="col-9 col-md-3 col-lg-2 ">
+						<h5>Swift</h5>
+						<div class="progress ">
+							<div class="progress-bar fill "  id="swift " role="progressbar " style="background-color: #fd2020; width: 0% "></div>
+						</div>
+					</div>
+					<div class="py-2 col-3 col-md-1 text-center ">
+						<img class="zoom " src="img/bootstrap.svg ">
+					</div>
+					<div class="col-9 col-md-3 col-lg-2 ">
+						<h5>Bootstrap</h5>
+						<div class="progress ">
+							<div class="progress-bar fill " id="bootstrap " role="progressbar " style="background-color: #563d7c; width: 0% "></div>
+						</div>
+					</div>
+					<div class="py-2 col-3 col-md-1 text-center ">
+						<img class="zoom " src="img/wordpress.svg ">
+					</div>
+					<div class="col-9 col-md-3 col-lg-2 ">
+						<h5>Wordpress</h5>
+						<div class="progress ">
+							<div class="progress-bar fill " id="wordpress " role="progressbar " style="background-color: #494741; width: 0% "></div>
+						</div>
+					</div>
+					<div class="py-2 col-3 col-md-1 text-center ">
+						<img class="zoom " src="img/ai.svg ">
+					</div>
+					<div class="col-9 col-md-3 col-lg-2 ">
+						<h5>Illustrator</h5>
+						<div class="progress ">
+							<div class="progress-bar fill " id="ai " role="progressbar " style="background-color: #f37021; width: 0% "></div>
+						</div>
+					</div>
+					<div class="py-2 col-3 col-md-1 text-center ">
+						<img class="zoom " src="img/lr.svg ">
+					</div>
+					<div class="col-9 col-md-3 col-lg-2 ">
+						<h5>Lightroom</h5>
+						<div class="progress ">
+							<div class="progress-bar fill " id="lr " role="progressbar " style="background-color: #aed3e9; width: 0% "></div>
+						</div>
+					</div>
+					<div class="py-2 col-3 col-md-1 text-center ">
+						<img class="zoom " src="img/ps.svg ">
+					</div>
+					<div class="col-9 col-md-3 col-lg-2 ">
+						<h5>Photoshop</h5>
+						<div class="progress ">
+							<div class="progress-bar fill " id="ps " role="progressbar " style="background-color: #31c5f0; width: 0% "></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container py-3 ">
+				<div class="row py-3 ">
+					<div class="col "><h3>Language Skills</h3>
+					<p>Under Construction</p></div>
+				</div>
+				<div class="row ">
+				</div>
+			</div>
+			<div class="container py-3 ">
+				<div class="row py-3 ">
+					<div class="col "><h3>Hobbies</h3>
+					<p>Under Construction</p>
+				</div>
+				</div>
+			</div>
 		</div>
-		
 	</section>
-
-	<footer>
-		
+	<section id="portofolio ">
+		<div class="container ">
+			<div class="row py-3 ">
+				<div class="col "><h1>Portofolio</h1>
+				<p>Under Construction</p>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="contacts ">
+		<div class="container ">
+			<div class="row py-4 ">
+				<div class="col "><h1>Contacts</h1>
+				<p>Under Construction</p>
+			</div>
+			</div>
+			<div class="container ">
+				<div class="row py-4 ">
+					<div class="col-md-6 mr-auto ">
+						<div class="row align-items-center py-1 ">
+						</div>
+						<div class="row align-items-center py-1 ">
+						</div>
+					</div>
+					<div class="col-md-6 mx-auto "> 
+						<form role="form ">
+							<div class="form-group ">
+								<input type="text " class="form-control " id="name " name="name " placeholder="Name " required>
+							</div>
+							<div class="form-group ">
+								<input type="text " class="form-control " id="email " name="email " placeholder="Email " required>
+							</div>
+							<div class="form-group ">
+								<textarea type="textarea " class="form-control " id="message " name="message " placeholder="Message " rows="4 "></textarea>
+							</div>
+							<div class="text-right ">
+								<button type="button " id="submit " name="submit " class="btn btn-light my-2 my-sm-0 ">Send</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer style="color: white; background-color: #376eb5 ">
+		<p class="text-center my-0 ">&copy; 2018 Ricardo Faria</p>
 	</footer>
-
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-	<script type="text/javascript" src="js/custom.min.js"></script>
-
+	<script type="text/javascript " src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+	<script type="text/javascript " src="js/bootstrap.bundle.min.js "></script>
+	<script type="text/javascript " src="js/jquery.easing.min.js "></script>
+	<script type="text/javascript " src="js/custom.min.js "></script>
 </body>
 </html>
